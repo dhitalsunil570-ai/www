@@ -8,11 +8,23 @@ import { Services, Doctor, AboutUs, ForPatient, ForVisitors, GalleryItem, VideoI
 import { DETAILED_PRICE_LIST } from './priceListData';
 import seedData from './seedData.json';
 const {
-  categories: INITIAL_CATEGORIES, services: INITIAL_SERVICES, doctors: INITIAL_DOCTORS, aboutUs: INITIAL_ABOUT_US,
-  patientData: INITIAL_FOR_PATIENT, visitorData: INITIAL_FOR_VISITORS, gallery: INITIAL_GALLERY, videos: INITIAL_VIDEOS,
-  news: INITIAL_NEWS, priceList: INITIAL_PRICE_LIST, contact: INITIAL_CONTACT, settings: INITIAL_SETTINGS,
-  bookings: INITIAL_BOOKINGS, testimonials: INITIAL_TESTIMONIALS, events: INITIAL_EVENTS, machines: INITIAL_MACHINES,
-  qrCodes: INITIAL_QR_CODES
+  categories: INITIAL_CATEGORIES = [],
+  services: INITIAL_SERVICES = {},
+  doctors: INITIAL_DOCTORS = [],
+  aboutUs: INITIAL_ABOUT_US = {},
+  patientData: INITIAL_FOR_PATIENT = [],
+  visitorData: INITIAL_FOR_VISITORS = [],
+  gallery: INITIAL_GALLERY = [],
+  videos: INITIAL_VIDEOS = [],
+  news: INITIAL_NEWS = [],
+  priceList: INITIAL_PRICE_LIST = [],
+  contact: INITIAL_CONTACT = {},
+  settings: INITIAL_SETTINGS = { banners: [] },
+  bookings: INITIAL_BOOKINGS = [],
+  testimonials: INITIAL_TESTIMONIALS = [],
+  events: INITIAL_EVENTS = [],
+  machines: INITIAL_MACHINES = [],
+  qrCodes: INITIAL_QR_CODES = []
 } = seedData as any;
 import { getWhatsAppLink, parseVideoEmbed, getYouTubeThumbnail } from './utils';
 import MainNavbar from './components/MainNavbar';
