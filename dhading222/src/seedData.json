@@ -169,5 +169,28 @@
   "videos": [],
   "forPatient": [],
   "forVisitors": [],
-  "qrCodes": []
+  "qrCodes": [],
+  "patientData": {
+    "admissionDeskText": "Our admission desk is available 24/7 to assist you with admission procedures and inquiries.",
+    "appointment": [
+      { "id": "apt1", "title": "Before Appointment", "imageUrl": "https://i.postimg.cc/dZhT9K7n/Whats-App-Image-2026-05-31-at-11-44-14-PM.jpg", "pdfUrl": "" },
+      { "id": "apt2", "title": "After Appointment Care", "imageUrl": "https://i.postimg.cc/0KzJCq6G/Whats-App-Image-2026-05-31-at-11-44-14-PM-(1).jpg", "pdfUrl": "" },
+      { "id": "apt3", "title": "Emergency Contact", "imageUrl": "https://i.postimg.cc/N9JHT00P/Whats-App-Image-2026-05-31-at-11-44-14-PM-(2).jpg", "pdfUrl": "" }
+    ]
+  },
+  "visitorData": {
+    "visitHour": [
+      { "id": "vh1", "title": "General Visiting Hours", "imageUrl": "https://i.postimg.cc/G87yYppq/Whats-App-Image-2026-05-31-at-11-44-15-PM.jpg" },
+      { "id": "vh2", "title": "ICU Visiting Hours", "imageUrl": "https://i.postimg.cc/S2TM8KKr/Whats-App-Image-2026-05-31-at-11-44-15-PM-(1).jpg" },
+      { "id": "vh3", "title": "Private Room Visiting", "imageUrl": "https://i.postimg.cc/BLYKDvvC/Whats-App-Image-2026-05-31-at-11-44-16-PM.jpg" }
+    ],
+    "dosAndDonts": [
+      { "id": "dd1", "title": "Do's", "imageUrl": "https://i.postimg.cc/8JK6WCCm/Whats-App-Image-2026-05-31-at-11-44-16-PM-(1).jpg", "pdfUrl": "" },
+      { "id": "dd2", "title": "Don'ts", "imageUrl": "https://i.postimg.cc/0MWwmNNd/Whats-App-Image-2026-05-31-at-11-44-16-PM-(2).jpg", "pdfUrl": "" }
+    ],
+    "parking": [
+      { "id": "pk1", "title": "Main Parking", "imageUrl": "https://i.postimg.cc/G8McdsHW/Whats-App-Image-2026-05-31-at-10-52-55-PM.jpg" },
+      { "id": "pk2", "title": "Visitor Parking", "imageUrl": "https://i.postimg.cc/HcSpd7VP/Whats-App-Image-2026-05-31-at-10-52-55-PM-(1).jpg" }
+    ]
+  }
 }
