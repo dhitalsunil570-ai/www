@@ -34,69 +34,121 @@
     "UROLOGY & ROBOTIC ONCOLOGY"
   ],
   "services": {
-    "opd": [],
-    "ipd": [],
-    "emergency": [],
-    "labPathology": [],
-    "radiology": [],
-    "cashReception": [],
-    "pharmacy": [],
-    "ambulance": [],
-    "preventiveHealth": []
+    "opd": [
+      { "id": "opd1", "title": "24/7 OPD Services", "description": "Round-the-clock out-patient department with specialized doctors for all major departments" },
+      { "id": "opd2", "title": "Emergency OPD", "description": "Immediate medical attention available 24 hours for emergencies" },
+      { "id": "opd3", "title": "Consultation Rooms", "description": "Well-equipped consultation facilities with modern diagnostic equipment" }
+    ],
+    "ipd": [
+      { "id": "ipd1", "title": "Multi-Specialty IPD", "description": "Advanced in-patient facilities with ICU and HDU support" },
+      { "id": "ipd2", "title": "Private Rooms", "description": "Comfortable private rooms with modern amenities" },
+      { "id": "ipd3", "title": "ICU Services", "description": "Intensive care unit with 24/7 monitoring" }
+    ],
+    "emergency": [
+      { "id": "emg1", "title": "Emergency Services", "description": "24/7 emergency department with trauma specialists" },
+      { "id": "emg2", "title": "Ambulance Service", "description": "Equipped ambulances with trained paramedics" },
+      { "id": "emg3", "title": "Critical Care", "description": "Advanced life support systems and emergency procedures" }
+    ],
+    "labPathology": [
+      { "id": "lab1", "title": "Pathology Lab", "description": "Fully automated pathology laboratory with rapid results" },
+      { "id": "lab2", "title": "Blood Bank", "description": "Safe and reliable blood transfusion services" },
+      { "id": "lab3", "title": "Microbiological Tests", "description": "Advanced microbiological testing and culture services" }
+    ],
+    "radiology": [
+      { "id": "rad1", "title": "CT Scan", "description": "Advanced CT scanning technology for accurate diagnosis" },
+      { "id": "rad2", "title": "X-Ray", "description": "Digital X-ray with minimal radiation exposure" },
+      { "id": "rad3", "title": "Ultrasound", "description": "2D and 3D ultrasound imaging services" }
+    ],
+    "cashReception": [
+      { "id": "cash1", "title": "Cash Counter", "description": "Smooth payment and billing services" },
+      { "id": "cash2", "title": "Insurance Support", "description": "Support for all major insurance companies" }
+    ],
+    "pharmacy": [
+      { "id": "pharm1", "title": "Hospital Pharmacy", "description": "Complete range of medicines and pharmaceuticals" },
+      { "id": "pharm2", "title": "Surgical Supplies", "description": "Medical and surgical supplies available" }
+    ],
+    "ambulance": [
+      { "id": "amb1", "title": "Ambulance Service", "description": "24/7 ambulance services with trained staff" },
+      { "id": "amb2", "title": "Air Ambulance", "description": "Emergency air ambulance service for critical cases" }
+    ],
+    "preventiveHealth": [
+      { "id": "prev1", "title": "Health Checkup", "description": "Comprehensive health checkup packages" },
+      { "id": "prev2", "title": "Vaccination", "description": "Complete vaccination programs for all ages" }
+    ]
   },
-  "doctors": [],
+  "doctors": [
+    { "id": "doc1", "name": "Dr. Ram Sharma", "category": "NEURO SURGERY", "qualification": "MD, MS Neurosurgery", "experience": "15 years", "photoUrl": "https://i.postimg.cc/zv9KFyDX/Whats-App-Image-2026-05-31-at-11-51-02-PM.jpg", "timing": "Mon-Fri: 9AM-4PM", "phoneNumber": "9841234567" },
+    { "id": "doc2", "name": "Dr. Priya Koirala", "category": "OBSTETRICS & GYNECOLOGY", "qualification": "MD, DNB Obstetrics", "experience": "12 years", "photoUrl": "https://i.postimg.cc/G2LR7Kg3/Whats-App-Image-2026-06-01-at-12-34-01-AM.jpg", "timing": "Tue-Sat: 2PM-6PM", "phoneNumber": "9841234568" },
+    { "id": "doc3", "name": "Dr. Anil Paudel", "category": "CARDIOLOGY", "qualification": "MD Cardiology", "experience": "18 years", "photoUrl": "https://i.postimg.cc/G2LR7Kg3/Whats-App-Image-2026-06-01-at-12-34-01-AM.jpg", "timing": "Mon-Thu: 10AM-2PM", "phoneNumber": "9841234569" },
+    { "id": "doc4", "name": "Dr. Sita Rana", "category": "PEDIATRICS AND ADOLESCENT MEDICINE", "qualification": "MD Pediatrics", "experience": "10 years", "photoUrl": "https://i.postimg.cc/zv9KFyDX/Whats-App-Image-2026-05-31-at-11-51-02-PM.jpg", "timing": "Mon-Sat: 11AM-3PM", "phoneNumber": "9841234570" },
+    { "id": "doc5", "name": "Dr. Bikash Sapkota", "category": "GENERAL SURGERY", "qualification": "MS General Surgery", "experience": "20 years", "photoUrl": "https://i.postimg.cc/zv9KFyDX/Whats-App-Image-2026-05-31-at-11-51-02-PM.jpg", "timing": "Mon-Fri: 8AM-12PM", "phoneNumber": "9851051956" }
+  ],
   "aboutUs": {
     "introduction": {
       "photoUrl": "https://i.postimg.cc/G2LR7Kg3/Whats-App-Image-2026-06-01-at-12-34-01-AM.jpg",
-      "details": "Dhading Hospital is a leading private multi-specialty healthcare facility located at Dhading, Nepal."
+      "details": "Dhading Hospital is a leading private multi-specialty healthcare facility located at Dhading, Nepal. With state-of-the-art medical equipment and highly qualified medical professionals, we provide comprehensive healthcare services to patients across all age groups and medical specialties. Our commitment is to deliver world-class healthcare with a personal touch."
     },
     "chairmanMessage": {
       "name": "Bikash Sapkota",
-      "details": "Welcome to Dhading Hospital.",
+      "details": "Welcome to Dhading Hospital. Our mission is to provide compassionate, high-quality healthcare to every patient who walks through our doors. With a team of experienced doctors and modern facilities, we are committed to your health and well-being.",
       "whatsappNumber": "9851051956",
       "photoUrl": "https://i.postimg.cc/zv9KFyDX/Whats-App-Image-2026-05-31-at-11-51-02-PM.jpg"
     },
     "boardOfDirectors": [],
     "hospitalWorkingTeam": [],
-    "careersText": "Join us!"
+    "careersText": "Join us as we continue to grow and serve the healthcare needs of our community. We welcome talented healthcare professionals and support staff."
   },
+  "news": [
+    { "id": "news1", "title": "New ICU Wing Inaugurated", "description": "We are pleased to announce the opening of our state-of-the-art ICU with 24-hour nursing support and advanced monitoring systems.", "date": "2026-05-15", "imageUrl": "https://i.postimg.cc/dZhT9K7n/Whats-App-Image-2026-05-31-at-11-44-14-PM.jpg" },
+    { "id": "news2", "title": "Free Health Checkup Camp", "description": "Dhading Hospital conducted a free health checkup camp for 500+ residents in the Dhading area, providing consultations and basic tests.", "date": "2026-05-10", "imageUrl": "https://i.postimg.cc/0KzJCq6G/Whats-App-Image-2026-05-31-at-11-44-14-PM-(1).jpg" },
+    { "id": "news3", "title": "Advanced Surgery Equipment", "description": "Hospital introduces advanced robotic-assisted surgical equipment for precise and minimally invasive procedures.", "date": "2026-04-25", "imageUrl": "https://i.postimg.cc/N9JHT00P/Whats-App-Image-2026-05-31-at-11-44-14-PM-(2).jpg" }
+  ],
+  "events": [
+    { "id": "event1", "title": "World Health Day Celebration", "date": "2026-04-07", "description": "Join us for health awareness programs, free consultations, and special discounts on health packages.", "imageUrl": "https://i.postimg.cc/G87yYppq/Whats-App-Image-2026-05-31-at-11-44-15-PM.jpg" },
+    { "id": "event2", "title": "Medical Seminar on Cardiac Health", "date": "2026-06-15", "description": "Expert cardiologists discuss latest advancements in cardiac care and prevention strategies.", "imageUrl": "https://i.postimg.cc/S2TM8KKr/Whats-App-Image-2026-05-31-at-11-44-15-PM-(1).jpg" }
+  ],
+  "testimonials": [
+    { "id": "test1", "name": "Hari Bahadur", "feedback": "Excellent hospital with highly professional staff. The doctors are very caring and treatment was very effective.", "rating": 5, "photoUrl": "https://i.postimg.cc/dZhT9K7n/Whats-App-Image-2026-05-31-at-11-44-14-PM.jpg" },
+    { "id": "test2", "name": "Sunita Thapa", "feedback": "I was very impressed with the cleanliness, hygiene, and professional approach of the entire hospital staff.", "rating": 5, "photoUrl": "https://i.postimg.cc/0KzJCq6G/Whats-App-Image-2026-05-31-at-11-44-14-PM-(1).jpg" },
+    { "id": "test3", "name": "Ramesh KC", "feedback": "Best hospital in the region. Doctors are experienced and the nursing staff is very attentive and caring.", "rating": 5, "photoUrl": "https://i.postimg.cc/G87yYppq/Whats-App-Image-2026-05-31-at-11-44-15-PM.jpg" }
+  ],
   "gallery": [
-    { "id": "1", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/dZhT9K7n/Whats-App-Image-2026-05-31-at-11-44-14-PM.jpg" },
-    { "id": "2", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/0KzJCq6G/Whats-App-Image-2026-05-31-at-11-44-14-PM-(1).jpg" },
-    { "id": "3", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/N9JHT00P/Whats-App-Image-2026-05-31-at-11-44-14-PM-(2).jpg" },
-    { "id": "4", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/G87yYppq/Whats-App-Image-2026-05-31-at-11-44-15-PM.jpg" },
-    { "id": "5", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/S2TM8KKr/Whats-App-Image-2026-05-31-at-11-44-15-PM-(1).jpg" },
-    { "id": "6", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/BLYKDvvC/Whats-App-Image-2026-05-31-at-11-44-16-PM.jpg" },
-    { "id": "7", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/8JK6WCCm/Whats-App-Image-2026-05-31-at-11-44-16-PM-(1).jpg" },
-    { "id": "8", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/0MWwmNNd/Whats-App-Image-2026-05-31-at-11-44-16-PM-(2).jpg" }
+    { "id": "1", "title": "Hospital Lobby", "imageUrl": "https://i.postimg.cc/dZhT9K7n/Whats-App-Image-2026-05-31-at-11-44-14-PM.jpg" },
+    { "id": "2", "title": "Operating Theater", "imageUrl": "https://i.postimg.cc/0KzJCq6G/Whats-App-Image-2026-05-31-at-11-44-14-PM-(1).jpg" },
+    { "id": "3", "title": "Patient Care", "imageUrl": "https://i.postimg.cc/N9JHT00P/Whats-App-Image-2026-05-31-at-11-44-14-PM-(2).jpg" },
+    { "id": "4", "title": "ICU Ward", "imageUrl": "https://i.postimg.cc/G87yYppq/Whats-App-Image-2026-05-31-at-11-44-15-PM.jpg" },
+    { "id": "5", "title": "Pharmacy", "imageUrl": "https://i.postimg.cc/S2TM8KKr/Whats-App-Image-2026-05-31-at-11-44-15-PM-(1).jpg" },
+    { "id": "6", "title": "Consultation Room", "imageUrl": "https://i.postimg.cc/BLYKDvvC/Whats-App-Image-2026-05-31-at-11-44-16-PM.jpg" },
+    { "id": "7", "title": "Laboratory", "imageUrl": "https://i.postimg.cc/8JK6WCCm/Whats-App-Image-2026-05-31-at-11-44-16-PM-(1).jpg" },
+    { "id": "8", "title": "Reception Area", "imageUrl": "https://i.postimg.cc/0MWwmNNd/Whats-App-Image-2026-05-31-at-11-44-16-PM-(2).jpg" }
   ],
   "machines": [
-    { "id": "1", "title": "Machine", "imageUrl": "https://i.postimg.cc/G8McdsHW/Whats-App-Image-2026-05-31-at-10-52-55-PM.jpg", "description": "" },
-    { "id": "2", "title": "Machine", "imageUrl": "https://i.postimg.cc/HcSpd7VP/Whats-App-Image-2026-05-31-at-10-52-55-PM-(1).jpg", "description": "" },
-    { "id": "3", "title": "Machine", "imageUrl": "https://i.postimg.cc/474JD1NV/Whats-App-Image-2026-05-31-at-10-52-56-PM.jpg", "description": "" },
-    { "id": "4", "title": "Machine", "imageUrl": "https://i.postimg.cc/7GPxFNYs/Whats-App-Image-2026-05-31-at-10-52-56-PM-(1).jpg", "description": "" },
-    { "id": "5", "title": "Machine", "imageUrl": "https://i.postimg.cc/JDT1MBsm/Whats-App-Image-2026-05-31-at-10-52-56-PM-(2).jpg", "description": "" },
-    { "id": "6", "title": "Machine", "imageUrl": "https://i.postimg.cc/478JshYR/Whats-App-Image-2026-05-31-at-10-52-57-PM.jpg", "description": "" },
-    { "id": "7", "title": "Machine", "imageUrl": "https://i.postimg.cc/ZvCJRKNt/Whats-App-Image-2026-05-31-at-10-52-57-PM-(1).jpg", "description": "" },
-    { "id": "8", "title": "Machine", "imageUrl": "https://i.postimg.cc/sQnVsZMR/Whats-App-Image-2026-05-31-at-10-52-57-PM-(2).jpg", "description": "" },
-    { "id": "9", "title": "Machine", "imageUrl": "https://i.postimg.cc/64yB35Zp/Whats-App-Image-2026-05-31-at-10-52-58-PM.jpg", "description": "" },
-    { "id": "10", "title": "Machine", "imageUrl": "https://i.postimg.cc/PvPdxrDt/Whats-App-Image-2026-05-31-at-10-52-58-PM-(1).jpg", "description": "" },
-    { "id": "11", "title": "Machine", "imageUrl": "https://i.postimg.cc/vxcGBHn8/Whats-App-Image-2026-05-31-at-10-52-58-PM-(2).jpg", "description": "" },
-    { "id": "12", "title": "Machine", "imageUrl": "https://i.postimg.cc/m1tTD29r/Whats-App-Image-2026-05-31-at-10-52-59-PM.jpg", "description": "" },
-    { "id": "13", "title": "Machine", "imageUrl": "https://i.postimg.cc/MfvzTKBj/Whats-App-Image-2026-05-31-at-10-52-59-PM-(1).jpg", "description": "" },
-    { "id": "14", "title": "Machine", "imageUrl": "https://i.postimg.cc/SjsSVVPq/Whats-App-Image-2026-05-31-at-10-52-59-PM-(2).jpg", "description": "" },
-    { "id": "15", "title": "Machine", "imageUrl": "https://i.postimg.cc/8s5pwwYN/Whats-App-Image-2026-05-31-at-10-53-00-PM.jpg", "description": "" },
-    { "id": "16", "title": "Machine", "imageUrl": "https://i.postimg.cc/DmZv55N7/Whats-App-Image-2026-05-31-at-10-53-00-PM-(1).jpg", "description": "" },
-    { "id": "17", "title": "Machine", "imageUrl": "https://i.postimg.cc/xqCfggZf/Whats-App-Image-2026-05-31-at-10-53-00-PM-(2).jpg", "description": "" },
-    { "id": "18", "title": "Machine", "imageUrl": "https://i.postimg.cc/BtVqzHWH/Whats-App-Image-2026-05-31-at-10-53-01-PM.jpg", "description": "" },
-    { "id": "19", "title": "Machine", "imageUrl": "https://i.postimg.cc/qg5kFyfn/Whats-App-Image-2026-05-31-at-10-53-01-PM-(1).jpg", "description": "" },
-    { "id": "20", "title": "Machine", "imageUrl": "https://i.postimg.cc/8s01YM8d/Whats-App-Image-2026-05-31-at-10-53-01-PM-(2).jpg", "description": "" },
-    { "id": "21", "title": "Machine", "imageUrl": "https://i.postimg.cc/t7MXcW0t/Whats-App-Image-2026-05-31-at-10-53-02-PM.jpg", "description": "" },
-    { "id": "22", "title": "Machine", "imageUrl": "https://i.postimg.cc/PPvtnJh1/Whats-App-Image-2026-05-31-at-10-53-02-PM-(1).jpg", "description": "" },
-    { "id": "23", "title": "Machine", "imageUrl": "https://i.postimg.cc/Whq2czjG/Whats-App-Image-2026-05-31-at-10-53-03-PM.jpg", "description": "" },
-    { "id": "24", "title": "Machine", "imageUrl": "https://i.postimg.cc/D84230FQ/Whats-App-Image-2026-05-31-at-10-53-03-PM-(1).jpg", "description": "" },
-    { "id": "25", "title": "Machine", "imageUrl": "https://i.postimg.cc/jLnsY2Kh/Whats-App-Image-2026-05-31-at-10-53-03-PM-(2).jpg", "description": "" },
-    { "id": "26", "title": "Machine", "imageUrl": "https://i.postimg.cc/XpBV6q3L/Whats-App-Image-2026-05-31-at-10-53-04-PM.jpg", "description": "" }
+    { "id": "1", "title": "CT Scanner 256 Slice", "imageUrl": "https://i.postimg.cc/G8McdsHW/Whats-App-Image-2026-05-31-at-10-52-55-PM.jpg", "description": "Advanced 256-slice CT scanner for precise diagnosis" },
+    { "id": "2", "title": "MRI Machine 3T", "imageUrl": "https://i.postimg.cc/HcSpd7VP/Whats-App-Image-2026-05-31-at-10-52-55-PM-(1).jpg", "description": "3 Tesla MRI machine for detailed imaging" },
+    { "id": "3", "title": "Digital X-Ray System", "imageUrl": "https://i.postimg.cc/474JD1NV/Whats-App-Image-2026-05-31-at-10-52-56-PM.jpg", "description": "Latest digital X-ray with low radiation" },
+    { "id": "4", "title": "Ultrasound Machine", "imageUrl": "https://i.postimg.cc/7GPxFNYs/Whats-App-Image-2026-05-31-at-10-52-56-PM-(1).jpg", "description": "High-resolution ultrasound machine" },
+    { "id": "5", "title": "Endoscopy Unit", "imageUrl": "https://i.postimg.cc/JDT1MBsm/Whats-App-Image-2026-05-31-at-10-52-56-PM-(2).jpg", "description": "Advanced endoscopy equipment" },
+    { "id": "6", "title": "Ventilator", "imageUrl": "https://i.postimg.cc/478JshYR/Whats-App-Image-2026-05-31-at-10-52-57-PM.jpg", "description": "Modern ICU ventilators" },
+    { "id": "7", "title": "ECG Machine", "imageUrl": "https://i.postimg.cc/ZvCJRKNt/Whats-App-Image-2026-05-31-at-10-52-57-PM-(1).jpg", "description": "Multi-channel ECG machine" },
+    { "id": "8", "title": "Monitor System", "imageUrl": "https://i.postimg.cc/sQnVsZMR/Whats-App-Image-2026-05-31-at-10-52-57-PM-(2).jpg", "description": "Patient monitoring system" },
+    { "id": "9", "title": "Oxygen Concentrator", "imageUrl": "https://i.postimg.cc/64yB35Zp/Whats-App-Image-2026-05-31-at-10-52-58-PM.jpg", "description": "High-capacity oxygen concentrators" },
+    { "id": "10", "title": "Suction Machine", "imageUrl": "https://i.postimg.cc/PvPdxrDt/Whats-App-Image-2026-05-31-at-10-52-58-PM-(1).jpg", "description": "Hospital-grade suction machines" },
+    { "id": "11", "title": "Infusion Pump", "imageUrl": "https://i.postimg.cc/vxcGBHn8/Whats-App-Image-2026-05-31-at-10-52-58-PM-(2).jpg", "description": "Smart infusion pump systems" },
+    { "id": "12", "title": "Defibrillator", "imageUrl": "https://i.postimg.cc/m1tTD29r/Whats-App-Image-2026-05-31-at-10-52-59-PM.jpg", "description": "Automatic external defibrillators" },
+    { "id": "13", "title": "Dialysis Machine", "imageUrl": "https://i.postimg.cc/MfvzTKBj/Whats-App-Image-2026-05-31-at-10-52-59-PM-(1).jpg", "description": "Advanced hemodialysis machines" },
+    { "id": "14", "title": "Autoclave", "imageUrl": "https://i.postimg.cc/SjsSVVPq/Whats-App-Image-2026-05-31-at-10-52-59-PM-(2).jpg", "description": "Sterilization equipment" },
+    { "id": "15", "title": "Blood Analyzer", "imageUrl": "https://i.postimg.cc/8s5pwwYN/Whats-App-Image-2026-05-31-at-10-53-00-PM.jpg", "description": "Automated blood analyzer" },
+    { "id": "16", "title": "Microscope", "imageUrl": "https://i.postimg.cc/DmZv55N7/Whats-App-Image-2026-05-31-at-10-53-00-PM-(1).jpg", "description": "Digital microscopy system" },
+    { "id": "17", "title": "Incubator", "imageUrl": "https://i.postimg.cc/xqCfggZf/Whats-App-Image-2026-05-31-at-10-53-00-PM-(2).jpg", "description": "Neonatal incubators" },
+    { "id": "18", "title": "Surgical Lights", "imageUrl": "https://i.postimg.cc/BtVqzHWH/Whats-App-Image-2026-05-31-at-10-53-01-PM.jpg", "description": "LED surgical lights" },
+    { "id": "19", "title": "Anesthesia Machine", "imageUrl": "https://i.postimg.cc/qg5kFyfn/Whats-App-Image-2026-05-31-at-10-53-01-PM-(1).jpg", "description": "Advanced anesthesia delivery system" },
+    { "id": "20", "title": "Cautery Machine", "imageUrl": "https://i.postimg.cc/8s01YM8d/Whats-App-Image-2026-05-31-at-10-53-01-PM-(2).jpg", "description": "Electrosurgical cautery unit" },
+    { "id": "21", "title": "Laser Equipment", "imageUrl": "https://i.postimg.cc/t7MXcW0t/Whats-App-Image-2026-05-31-at-10-53-02-PM.jpg", "description": "Medical laser systems" },
+    { "id": "22", "title": "OT Table", "imageUrl": "https://i.postimg.cc/PPvtnJh1/Whats-App-Image-2026-05-31-at-10-53-02-PM-(1).jpg", "description": "Hydraulic operating tables" },
+    { "id": "23", "title": "Recovery Bed", "imageUrl": "https://i.postimg.cc/Whq2czjG/Whats-App-Image-2026-05-31-at-10-53-03-PM.jpg", "description": "Electric recovery beds" },
+    { "id": "24", "title": "Bed Side Monitor", "imageUrl": "https://i.postimg.cc/D84230FQ/Whats-App-Image-2026-05-31-at-10-53-03-PM-(1).jpg", "description": "Bedside patient monitoring systems" },
+    { "id": "25", "title": "Laboratory Centrifuge", "imageUrl": "https://i.postimg.cc/jLnsY2Kh/Whats-App-Image-2026-05-31-at-10-53-03-PM-(2).jpg", "description": "High-speed laboratory centrifuge" },
+    { "id": "26", "title": "Ultrasound Doppler", "imageUrl": "https://i.postimg.cc/XpBV6q3L/Whats-App-Image-2026-05-31-at-10-53-04-PM.jpg", "description": "Color doppler ultrasound system" }
   ],
   "mailboxes": [
     { "id": "mb1", "email": "info@dhadinghospital.com.np", "password": "Dhading@123", "inbox": [] },
@@ -108,5 +160,14 @@
   ],
   "contact": {
     "phone": "010404014"
-  }
+  },
+  "settings": {
+    "banners": []
+  },
+  "bookings": [],
+  "priceList": [],
+  "videos": [],
+  "forPatient": [],
+  "forVisitors": [],
+  "qrCodes": []
 }
