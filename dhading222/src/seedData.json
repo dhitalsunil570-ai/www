@@ -1,0 +1,112 @@
+{
+  "categories": [
+    "NEURO SURGERY",
+    "GENERAL SURGERY",
+    "ORTHOPEDICS, TRAUMA & SPINE SURGERY",
+    "DENTAL SURGERY",
+    "ENT HEAD & NECK SURGERY",
+    "BURN, PLASTIC & COSMETIC SURGERY",
+    "THORACIC, BREAST AND THYROID SURGERY",
+    "CARDIO-VASCULAR SURGERY",
+    "PEDIATRIC SURGERY",
+    "OBSTETRICS & GYNECOLOGY",
+    "INTERNAL MEDICINE",
+    "GASTROENTEROLOGY & HEPATOBILIARY",
+    "NEPHROLOGY",
+    "MEDICAL ONCOLOGY",
+    "PEDIATRICS AND ADOLESCENT MEDICINE",
+    "PSYCHIATRY",
+    "DERMATOLOGY & COSMETOLOGY",
+    "RADIOLOGY",
+    "PATHOLOGY",
+    "ANESTHESIA & CRITICAL CARE",
+    "PHYSIOTHERAPY",
+    "PLASTIC SURGERY",
+    "NEUROLOGY",
+    "CARDIOLOGY",
+    "DERMATOLOGY",
+    "ENDOCRINOLOGY & METABOLISM",
+    "OPHTHALMOLOGY",
+    "IVF",
+    "PAIN CLINIC",
+    "HEMATOLOGY",
+    "PULMONOLOGY MEDICINE",
+    "UROLOGY & ROBOTIC ONCOLOGY"
+  ],
+  "services": {
+    "opd": [],
+    "ipd": [],
+    "emergency": [],
+    "labPathology": [],
+    "radiology": [],
+    "cashReception": [],
+    "pharmacy": [],
+    "ambulance": [],
+    "preventiveHealth": []
+  },
+  "doctors": [],
+  "aboutUs": {
+    "introduction": {
+      "photoUrl": "https://i.postimg.cc/G2LR7Kg3/Whats-App-Image-2026-06-01-at-12-34-01-AM.jpg",
+      "details": "Dhading Hospital is a leading private multi-specialty healthcare facility located at Dhading, Nepal."
+    },
+    "chairmanMessage": {
+      "name": "Bikash Sapkota",
+      "details": "Welcome to Dhading Hospital.",
+      "whatsappNumber": "9851051956",
+      "photoUrl": "https://i.postimg.cc/zv9KFyDX/Whats-App-Image-2026-05-31-at-11-51-02-PM.jpg"
+    },
+    "boardOfDirectors": [],
+    "hospitalWorkingTeam": [],
+    "careersText": "Join us!"
+  },
+  "gallery": [
+    { "id": "1", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/dZhT9K7n/Whats-App-Image-2026-05-31-at-11-44-14-PM.jpg" },
+    { "id": "2", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/0KzJCq6G/Whats-App-Image-2026-05-31-at-11-44-14-PM-(1).jpg" },
+    { "id": "3", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/N9JHT00P/Whats-App-Image-2026-05-31-at-11-44-14-PM-(2).jpg" },
+    { "id": "4", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/G87yYppq/Whats-App-Image-2026-05-31-at-11-44-15-PM.jpg" },
+    { "id": "5", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/S2TM8KKr/Whats-App-Image-2026-05-31-at-11-44-15-PM-(1).jpg" },
+    { "id": "6", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/BLYKDvvC/Whats-App-Image-2026-05-31-at-11-44-16-PM.jpg" },
+    { "id": "7", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/8JK6WCCm/Whats-App-Image-2026-05-31-at-11-44-16-PM-(1).jpg" },
+    { "id": "8", "title": "Dhading Hospital Event", "imageUrl": "https://i.postimg.cc/0MWwmNNd/Whats-App-Image-2026-05-31-at-11-44-16-PM-(2).jpg" }
+  ],
+  "machines": [
+    { "id": "1", "title": "Machine", "imageUrl": "https://i.postimg.cc/G8McdsHW/Whats-App-Image-2026-05-31-at-10-52-55-PM.jpg", "description": "" },
+    { "id": "2", "title": "Machine", "imageUrl": "https://i.postimg.cc/HcSpd7VP/Whats-App-Image-2026-05-31-at-10-52-55-PM-(1).jpg", "description": "" },
+    { "id": "3", "title": "Machine", "imageUrl": "https://i.postimg.cc/474JD1NV/Whats-App-Image-2026-05-31-at-10-52-56-PM.jpg", "description": "" },
+    { "id": "4", "title": "Machine", "imageUrl": "https://i.postimg.cc/7GPxFNYs/Whats-App-Image-2026-05-31-at-10-52-56-PM-(1).jpg", "description": "" },
+    { "id": "5", "title": "Machine", "imageUrl": "https://i.postimg.cc/JDT1MBsm/Whats-App-Image-2026-05-31-at-10-52-56-PM-(2).jpg", "description": "" },
+    { "id": "6", "title": "Machine", "imageUrl": "https://i.postimg.cc/478JshYR/Whats-App-Image-2026-05-31-at-10-52-57-PM.jpg", "description": "" },
+    { "id": "7", "title": "Machine", "imageUrl": "https://i.postimg.cc/ZvCJRKNt/Whats-App-Image-2026-05-31-at-10-52-57-PM-(1).jpg", "description": "" },
+    { "id": "8", "title": "Machine", "imageUrl": "https://i.postimg.cc/sQnVsZMR/Whats-App-Image-2026-05-31-at-10-52-57-PM-(2).jpg", "description": "" },
+    { "id": "9", "title": "Machine", "imageUrl": "https://i.postimg.cc/64yB35Zp/Whats-App-Image-2026-05-31-at-10-52-58-PM.jpg", "description": "" },
+    { "id": "10", "title": "Machine", "imageUrl": "https://i.postimg.cc/PvPdxrDt/Whats-App-Image-2026-05-31-at-10-52-58-PM-(1).jpg", "description": "" },
+    { "id": "11", "title": "Machine", "imageUrl": "https://i.postimg.cc/vxcGBHn8/Whats-App-Image-2026-05-31-at-10-52-58-PM-(2).jpg", "description": "" },
+    { "id": "12", "title": "Machine", "imageUrl": "https://i.postimg.cc/m1tTD29r/Whats-App-Image-2026-05-31-at-10-52-59-PM.jpg", "description": "" },
+    { "id": "13", "title": "Machine", "imageUrl": "https://i.postimg.cc/MfvzTKBj/Whats-App-Image-2026-05-31-at-10-52-59-PM-(1).jpg", "description": "" },
+    { "id": "14", "title": "Machine", "imageUrl": "https://i.postimg.cc/SjsSVVPq/Whats-App-Image-2026-05-31-at-10-52-59-PM-(2).jpg", "description": "" },
+    { "id": "15", "title": "Machine", "imageUrl": "https://i.postimg.cc/8s5pwwYN/Whats-App-Image-2026-05-31-at-10-53-00-PM.jpg", "description": "" },
+    { "id": "16", "title": "Machine", "imageUrl": "https://i.postimg.cc/DmZv55N7/Whats-App-Image-2026-05-31-at-10-53-00-PM-(1).jpg", "description": "" },
+    { "id": "17", "title": "Machine", "imageUrl": "https://i.postimg.cc/xqCfggZf/Whats-App-Image-2026-05-31-at-10-53-00-PM-(2).jpg", "description": "" },
+    { "id": "18", "title": "Machine", "imageUrl": "https://i.postimg.cc/BtVqzHWH/Whats-App-Image-2026-05-31-at-10-53-01-PM.jpg", "description": "" },
+    { "id": "19", "title": "Machine", "imageUrl": "https://i.postimg.cc/qg5kFyfn/Whats-App-Image-2026-05-31-at-10-53-01-PM-(1).jpg", "description": "" },
+    { "id": "20", "title": "Machine", "imageUrl": "https://i.postimg.cc/8s01YM8d/Whats-App-Image-2026-05-31-at-10-53-01-PM-(2).jpg", "description": "" },
+    { "id": "21", "title": "Machine", "imageUrl": "https://i.postimg.cc/t7MXcW0t/Whats-App-Image-2026-05-31-at-10-53-02-PM.jpg", "description": "" },
+    { "id": "22", "title": "Machine", "imageUrl": "https://i.postimg.cc/PPvtnJh1/Whats-App-Image-2026-05-31-at-10-53-02-PM-(1).jpg", "description": "" },
+    { "id": "23", "title": "Machine", "imageUrl": "https://i.postimg.cc/Whq2czjG/Whats-App-Image-2026-05-31-at-10-53-03-PM.jpg", "description": "" },
+    { "id": "24", "title": "Machine", "imageUrl": "https://i.postimg.cc/D84230FQ/Whats-App-Image-2026-05-31-at-10-53-03-PM-(1).jpg", "description": "" },
+    { "id": "25", "title": "Machine", "imageUrl": "https://i.postimg.cc/jLnsY2Kh/Whats-App-Image-2026-05-31-at-10-53-03-PM-(2).jpg", "description": "" },
+    { "id": "26", "title": "Machine", "imageUrl": "https://i.postimg.cc/XpBV6q3L/Whats-App-Image-2026-05-31-at-10-53-04-PM.jpg", "description": "" }
+  ],
+  "mailboxes": [
+    { "id": "mb1", "email": "info@dhadinghospital.com.np", "password": "Dhading@123", "inbox": [] },
+    { "id": "mb2", "email": "chairman@dhadinghospital.com.np", "password": "H3llo2u 1", "inbox": [] },
+    { "id": "mb3", "email": "Reception@dhadinghospital.com.np", "password": "Dhading@123", "inbox": [] },
+    { "id": "mb4", "email": "Account@dhadinghosoital.com.np", "password": "Dhading@123", "inbox": [] },
+    { "id": "mb5", "email": "pathology@dhadinghospital.com.np", "password": "Dhading@123", "inbox": [] },
+    { "id": "mb6", "email": "medicaldirector@dhadinghospital.com.np", "password": "Dhading@123", "inbox": [] }
+  ],
+  "contact": {
+    "phone": "010404014"
+  }
+}

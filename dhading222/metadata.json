@@ -1,0 +1,6 @@
+{
+  "name": "Dhading Hospital Pvt. Ltd.",
+  "description": "Interactive multi-specialty portal for Dhading Hospital Pvt. Ltd., featuring real-time appointment booking, OPD/IPD content management, staff profiles lookup, and administrative password management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
