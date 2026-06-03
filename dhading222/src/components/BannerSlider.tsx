@@ -40,26 +40,26 @@ export default function BannerSlider({ banners }: BannerSliderProps) {
   const current = banners[currentIndex];
 
   return (
-    <div className="relative w-full h-[280px] sm:h-[400px] md:h-[600px] overflow-hidden bg-slate-900 group">
+    <div className="relative w-full h-[220px] sm:h-[320px] md:h-[500px] overflow-hidden bg-gradient-to-b from-slate-800 to-slate-900 group">
       {/* Dynamic Slide Background with parallax fade effect */}
-      <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+      <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
         <img
           src={current.imageUrl || "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1200&q=80"}
           alt={current.title}
-          className="w-full h-full object-contain opacity-90"
+          className="w-full h-full object-cover object-center opacity-95"
         />
         {/* Soft elegant bottom gradient to make centered text exceptionally crisp and readable */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
       </div>
 
       {/* Slide Captions - Centered for mobile, lower for desktop */}
-      <div className="absolute inset-x-0 bottom-10 sm:bottom-20 md:bottom-24 z-10 px-4 text-center">
-        <div className="space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold tracking-tight text-white uppercase drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)] font-sans">
+      <div className="absolute inset-x-0 bottom-8 sm:bottom-16 md:bottom-20 z-10 px-3 sm:px-4 text-center">
+        <div className="space-y-2 sm:space-y-3 md:space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h2 className="text-xl sm:text-3xl md:text-5xl font-bold tracking-wide text-white uppercase drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] font-sans letter-spacing-wide">
             {current.title}
           </h2>
           {current.subtitle && (
-            <p className="text-sm sm:text-base md:text-xl text-white font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-sans max-w-2xl mx-auto">
+            <p className="text-xs sm:text-sm md:text-lg text-gray-100 font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-sans max-w-3xl mx-auto leading-relaxed">
               {current.subtitle}
             </p>
           )}
