@@ -7,6 +7,7 @@ import {
 import { Services, Doctor, AboutUs, ForPatient, ForVisitors, GalleryItem, VideoItem, NewsItem, PriceListItem, ContactUsInfo, WebSettings, BookingRequest, TestimonialItem, HospitalEventItem, QRCodeItem, MachineItem, Mailbox } from './types';
 import { DETAILED_PRICE_LIST } from './priceListData';
 import seedData from './seedData.json';
+import { useFirebaseSync } from './useFirebaseSync';
 const {
   categories: INITIAL_CATEGORIES = [],
   services: INITIAL_SERVICES = {},
@@ -47,165 +48,32 @@ export default function App() {
   // -------------------------------------------------------------
   // STATE MANAGEMENT WITH LOCAL PERSISTENCE
   // -------------------------------------------------------------
+  const [mailboxes, setMailboxes] = useFirebaseSync<Mailbox[]>('mailboxes', []);
+  const [passConfig, setPassConfig] = useFirebaseSync<any>('passConfig', { adminPassword: 'admin123', mailboxPassword: 'mail123' });
+
+  // Firebase Real-time Sync
+  const [categories, setCategories] = useFirebaseSync<string[]>('categories', INITIAL_CATEGORIES);
+  const [services, setServices] = useFirebaseSync<Services>('services', INITIAL_SERVICES);
+  const [doctors, setDoctors] = useFirebaseSync<Doctor[]>('doctors', INITIAL_DOCTORS);
+  const [aboutUs, setAboutUs] = useFirebaseSync<AboutUs>('aboutUs', INITIAL_ABOUT_US);
+  const [patientData, setPatientData] = useFirebaseSync<ForPatient>('patientData', INITIAL_FOR_PATIENT);
+  const [visitorData, setVisitorData] = useFirebaseSync<ForVisitors>('visitorData', INITIAL_FOR_VISITORS);
+  const [gallery, setGallery] = useFirebaseSync<GalleryItem[]>('gallery', INITIAL_GALLERY);
+  const [videos, setVideos] = useFirebaseSync<VideoItem[]>('videos', INITIAL_VIDEOS);
+  const [news, setNews] = useFirebaseSync<NewsItem[]>('news', INITIAL_NEWS);
+  const [priceList, setPriceList] = useFirebaseSync<PriceListItem[]>('priceList', INITIAL_PRICE_LIST);
+  const [contact, setContact] = useFirebaseSync<ContactUsInfo>('contact', INITIAL_CONTACT);
+  const [settings, setSettings] = useFirebaseSync<WebSettings>('settings', INITIAL_SETTINGS);
+  const [bookings, setBookings] = useFirebaseSync<BookingRequest[]>('bookings', INITIAL_BOOKINGS);
+  const [testimonials, setTestimonials] = useFirebaseSync<TestimonialItem[]>('testimonials', INITIAL_TESTIMONIALS);
+  const [events, setEvents] = useFirebaseSync<HospitalEventItem[]>('events', INITIAL_EVENTS);
+  const [machines, setMachines] = useFirebaseSync<MachineItem[]>('machines', INITIAL_MACHINES);
+  const [qrCodes, setQrCodes] = useFirebaseSync<QRCodeItem[]>('qrCodes', INITIAL_QR_CODES);
+  
+  // Local UI States (Not synced to Firebase)
   const [isAdminView, setIsAdminView] = useState(false);
   const [showBookModal, setShowBookModal] = useState(false);
   const [activeTab, setActiveTab] = useState('home');
-
-  // Load state from local storage or fallback to seed data
-  const [categories, setCategories] = useState<string[]>(() => {
-    const saved = localStorage.getItem('dh_categories');
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      if (parsed.length >= 38) {
-        return parsed;
-      }
-    }
-    return INITIAL_CATEGORIES;
-  });
-
-  const [services, setServices] = useState<Services>(() => {
-    const saved = localStorage.getItem('dh_services');
-    return saved ? { ...INITIAL_SERVICES, ...JSON.parse(saved) } : INITIAL_SERVICES;
-  });
-
-  const [doctors, setDoctors] = useState<Doctor[]>(() => {
-    const saved = localStorage.getItem('dh_doctors');
-    return saved ? JSON.parse(saved) : INITIAL_DOCTORS;
-  });
-
-  const [aboutUs, setAboutUs] = useState<AboutUs>(() => {
-    const saved = localStorage.getItem('dh_about_us');
-    const baseAbout = saved ? { ...INITIAL_ABOUT_US, ...JSON.parse(saved) } : INITIAL_ABOUT_US;
-    
-    // Inject default executive staff if missing
-    if (!baseAbout.medicalDirector) {
-      baseAbout.medicalDirector = {
-        id: 'exec-md',
-        role: 'Medical Director',
-        name: 'Dr. Ram Prasad Sapkota',
-        bio: 'Senior consultant with over 20 years of clinical experience in hospital management and internal medicine.',
-        photoUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80',
-        email: 'medicaldirector@dhadinghospital.com.np',
-        phone: '+977-9851012345',
-        whatsapp: '9851012345'
-      };
-    }
-    if (!baseAbout.accountManager) {
-      baseAbout.accountManager = {
-        id: 'exec-am',
-        role: 'Account Manager',
-        name: 'Mr. Hari Bahadur Thapa',
-        bio: 'Experienced financial administrator overseeing hospital billing, insurance processing and fiscal operations.',
-        photoUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80',
-        email: 'Account@dhadinghosoital.com.np',
-        phone: '+977-9851054321',
-        whatsapp: '9851054321'
-      };
-    }
-    if (!baseAbout.reception) {
-      baseAbout.reception = {
-        id: 'exec-rec',
-        role: 'Reception Desk Head',
-        name: 'Mrs. Sita Devi Kumari',
-        bio: 'Dedicated patient coordination specialist ensuring smooth admission and inquiry services for all visitors.',
-        photoUrl: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80',
-        email: 'Reception@dhadinghospital.com.np',
-        phone: '+977-9851067890',
-        whatsapp: '9851067890'
-      };
-    }
-    
-    return baseAbout;
-  });
-
-  const [patientData, setPatientData] = useState<ForPatient>(() => {
-    const saved = localStorage.getItem('dh_patient');
-    return saved ? { ...INITIAL_FOR_PATIENT, ...JSON.parse(saved) } : INITIAL_FOR_PATIENT;
-  });
-
-  const [visitorData, setVisitorData] = useState<ForVisitors>(() => {
-    const saved = localStorage.getItem('dh_visitors');
-    return saved ? { ...INITIAL_FOR_VISITORS, ...JSON.parse(saved) } : INITIAL_FOR_VISITORS;
-  });
-
-  const [gallery, setGallery] = useState<GalleryItem[]>(() => {
-    const saved = localStorage.getItem('dh_gallery');
-    return saved ? JSON.parse(saved) : INITIAL_GALLERY;
-  });
-
-  const [videos, setVideos] = useState<VideoItem[]>(() => {
-    const saved = localStorage.getItem('dh_videos');
-    return saved ? JSON.parse(saved) : INITIAL_VIDEOS;
-  });
-
-  const [news, setNews] = useState<NewsItem[]>(() => {
-    const saved = localStorage.getItem('dh_news');
-    return saved ? JSON.parse(saved) : INITIAL_NEWS;
-  });
-
-  const [priceList, setPriceList] = useState<PriceListItem[]>(() => {
-    const saved = localStorage.getItem('dh_price_list');
-    return saved ? JSON.parse(saved) : INITIAL_PRICE_LIST;
-  });
-
-// ... (around line 99)
-  const [contact, setContact] = useState<ContactUsInfo>(() => {
-    const saved = localStorage.getItem('dh_contact');
-    const baseContact = saved ? { ...INITIAL_CONTACT, ...JSON.parse(saved) } : INITIAL_CONTACT;
-    
-    // Inject default official contacts if none exist
-    if (!baseContact.officialContacts || baseContact.officialContacts.length === 0) {
-      baseContact.officialContacts = [
-        { id: 'oc-1', title: 'Hospital official mail', email: 'info@dhadinghospital.com.np' },
-        { id: 'oc-2', title: 'Chairman Office mail', email: 'chairman@dhadinghospital.com.np', whatsapp: '9851051956' },
-        { id: 'oc-3', title: 'Reception Desk mail', email: 'Reception@dhadinghospital.com.np' },
-        { id: 'oc-4', title: 'Account Department mail', email: 'Account@dhadinghosoital.com.np' },
-        { id: 'oc-5', title: 'Pathology Lab mail', email: 'pathology@dhadinghospital.com.np' },
-        { id: 'oc-6', title: 'Medical Director mail', email: 'medicaldirector@dhadinghospital.com.np' }
-      ];
-    }
-    return baseContact;
-  });
-
-  const [mailboxes, setMailboxes] = useState<Mailbox[]>(() => {
-    const saved = localStorage.getItem('dh_mailboxes');
-    return saved ? JSON.parse(saved) : (seedData as any).mailboxes || [];
-  });
-
-  const [settings, setSettings] = useState<WebSettings>(() => {
-    const saved = localStorage.getItem('dh_settings');
-    return saved ? { ...INITIAL_SETTINGS, ...JSON.parse(saved) } : INITIAL_SETTINGS;
-  });
-
-  const [bookings, setBookings] = useState<BookingRequest[]>(() => {
-    const saved = localStorage.getItem('dh_bookings');
-    return saved ? JSON.parse(saved) : INITIAL_BOOKINGS;
-  });
-
-  const [testimonials, setTestimonials] = useState<TestimonialItem[]>(() => {
-    const saved = localStorage.getItem('dh_testimonials');
-    return saved ? JSON.parse(saved) : INITIAL_TESTIMONIALS;
-  });
-
-  const [events, setEvents] = useState<HospitalEventItem[]>(() => {
-    const saved = localStorage.getItem('dh_events');
-    return saved ? JSON.parse(saved) : INITIAL_EVENTS;
-  });
-
-  const [passwordConfig, setPasswordConfig] = useState(() => {
-    const saved = localStorage.getItem('dh_pass_config');
-    return saved ? JSON.parse(saved) : { password: '123321', recoveryPassword: 'dhadingrecovery' };
-  });
-
-  const [qrCodes, setQrCodes] = useState<QRCodeItem[]>(() => {
-    const saved = localStorage.getItem('dh_qr_codes');
-    return saved ? JSON.parse(saved) : INITIAL_QR_CODES;
-  });
-
-  const [machines, setMachines] = useState<MachineItem[]>(() => {
-    const saved = localStorage.getItem('dh_machines');
-    return saved ? JSON.parse(saved) : INITIAL_MACHINES;
-  });
 
   const [selectedMachineDashboard, setSelectedMachineDashboard] = useState<MachineItem | null>(null);
 
@@ -2376,7 +2244,7 @@ export default function App() {
                       <input
                         type="text"
                         required
-                        placeholder="e.g. निलकण्ठ-३, धादिङ"
+                        placeholder="e.g. निल��ण्ठ-३, धादिङ"
                         value={meetAddress}
                         onChange={e => setMeetAddress(e.target.value)}
                         className="w-full px-3.5 py-2 text-xs border border-gray-200 rounded-xl bg-white font-medium"
