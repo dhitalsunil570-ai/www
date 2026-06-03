@@ -49,7 +49,7 @@ export default function App() {
   // STATE MANAGEMENT WITH LOCAL PERSISTENCE
   // -------------------------------------------------------------
   const [mailboxes, setMailboxes] = useFirebaseSync<Mailbox[]>('mailboxes', []);
-  const [passConfig, setPassConfig] = useFirebaseSync<any>('passConfig', { adminPassword: 'admin123', mailboxPassword: 'mail123' });
+  const [passConfig, setPassConfig] = useFirebaseSync<any>('passConfig', { password: '123321', recoveryPassword: 'dhadingrecovery' });
 
   // Firebase Real-time Sync
   const [categories, setCategories] = useFirebaseSync<string[]>('categories', INITIAL_CATEGORIES);
