@@ -40,13 +40,13 @@ export default function BannerSlider({ banners }: BannerSliderProps) {
   const current = banners[currentIndex];
 
   return (
-    <div className="relative w-full h-[300px] sm:h-[450px] md:h-[600px] overflow-hidden bg-slate-900 group">
+    <div className="relative w-full h-[280px] sm:h-[400px] md:h-[600px] overflow-hidden bg-slate-900 group">
       {/* Dynamic Slide Background with parallax fade effect */}
-      <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
+      <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
         <img
           src={current.imageUrl || "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=1200&q=80"}
           alt={current.title}
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-full object-contain opacity-90"
         />
         {/* Soft elegant bottom gradient to make centered text exceptionally crisp and readable */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
