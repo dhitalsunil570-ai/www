@@ -325,8 +325,8 @@ export default function App() {
         setTestimonials={setTestimonials}
         events={events}
         setEvents={setEvents}
-        passwordConfig={passwordConfig}
-        setPasswordConfig={setPasswordConfig}
+        passwordConfig={passConfig}
+        setPasswordConfig={setPassConfig}
         qrCodes={qrCodes}
         setQrCodes={setQrCodes}
         machines={machines}
@@ -2090,7 +2090,7 @@ export default function App() {
 🩺 विशेषज्ञ चिकित्सक: ${meetDocName || 'Specialist Officer'}
 ✉ बिरामीको गुनासो/लक्षण: ${meetMessage || 'N/A'}
 
-[यो बुकिङ अनुरोध अस्पतालको डिजिटल डेस्क वेबपेजबाट स्वचालित रूपमा तयार पारिएको हो। कृपया मेरो अपोइन्टमेन्ट समय निश्चित गरिदिनुहोला। ]`;
+[यो बुकिङ अनुरोध अस्पतालको डिजिटल डेस्क वेबपेजबाट स्वचालित रूपमा तयार पारिएको ���ो। कृपया मेरो अपोइन्टमेन्ट समय निश्चित गरिदिनुहोला। ]`;
 
                   const encodedText = encodeURIComponent(bookingText);
                   const waLink = `https://wa.me/${finalDoctorPhone}?text=${encodedText}`;
