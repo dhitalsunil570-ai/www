@@ -162,8 +162,10 @@ export default function App() {
   }, [bookings]);
 
   useEffect(() => {
-    localStorage.setItem('dh_pass_config', JSON.stringify(passwordConfig));
-  }, [passwordConfig]);
+    localStorage.setItem('dh_pass_config', JSON.stringify(passConfig));
+  }, [passConfig]);
+  
+  const passwordConfig = passConfig;
 
   // Reset selected OPD category when navigation tabs or services subtabs change
   useEffect(() => {
