@@ -159,10 +159,29 @@
     { "id": "mb6", "email": "medicaldirector@dhadinghospital.com.np", "password": "Dhading@123", "inbox": [] }
   ],
   "contact": {
-    "phone": "010404014"
+    "phone": "010404014",
+    "chairmanPhone": "9851051956",
+    "email": "info@dhadinghospital.com.np",
+    "chairmanEmail": "chairman@dhadinghospital.com.np",
+    "receptionEmail": "reception@dhadinghospital.com.np",
+    "accountEmail": "account@dhadinghospital.com.np",
+    "pathologyEmail": "pathology@dhadinghospital.com.np",
+    "medicalDirectorEmail": "medicaldirector@dhadinghospital.com.np",
+    "officialContacts": [
+      { "id": "oc-1", "title": "Hospital Information", "email": "info@dhadinghospital.com.np", "phone": "010404014" },
+      { "id": "oc-2", "title": "Chairman Office", "email": "chairman@dhadinghospital.com.np", "phone": "9851051956" },
+      { "id": "oc-3", "title": "Reception Desk", "email": "reception@dhadinghospital.com.np" },
+      { "id": "oc-4", "title": "Account Department", "email": "account@dhadinghospital.com.np" },
+      { "id": "oc-5", "title": "Pathology Lab", "email": "pathology@dhadinghospital.com.np" },
+      { "id": "oc-6", "title": "Medical Director", "email": "medicaldirector@dhadinghospital.com.np" }
+    ]
   },
   "settings": {
-    "banners": []
+    "banners": [
+      { "id": "b1", "title": "Dhading Hospital", "subtitle": "Compassionate multi-disciplinary digital healthcare", "imageUrl": "https://i.postimg.cc/gkhtpjDg/Whats-App-Image-2026-06-02-at-1-31-18-AM.jpg" },
+      { "id": "b2", "title": "Quality Healthcare", "subtitle": "Modern medical facilities with experienced doctors", "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" }
+    ],
+    "logo": "https://i.postimg.cc/FHcYGgGn/Whats-App-Image-2026-05-31-at-3-22-33-AM.jpg"
   },
   "bookings": [],
   "priceList": [],
